@@ -1,0 +1,771 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+
+.top-bar #datetime{
+    background-color: #222;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-bar #left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-bar #left #anc a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+#logo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 11vh;
+}
+
+#logo-bar img {
+    height: 11vh;
+    margin-right: 20px;
+}
+#d1{
+    width: 100%;
+}
+
+video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgb(240, 191, 131);
+    position: absolute;
+}
+
+#d1 #but{
+    z-index: 99;
+    position: relative;
+    margin-top: 550px;
+    margin-left: 20px;
+}
+
+#d1 #but button{
+   color: white;
+   background-color:#1ABAF9;
+   border-radius: 5px;
+   border-color: transparent;
+   margin-top: 5px;
+   font-size: 16px;
+   font-weight: 600;
+   padding: 3px 5px;
+}
+
+
+#d2{
+    background-color: rgb(240, 191, 131);
+    width: 100%;
+    height: 89vh;
+    align-items: center;
+    z-index: 9999999;
+}
+
+#d2 h4{
+    padding-top: 10vh;
+    font-size: 13px;
+    display: flex;
+    justify-content:center;
+     
+}
+
+#d2 #arc{
+    margin-left: 185vh;
+}
+
+#d2 #arc button{
+    border: 1px solid transparent;
+    padding: .3vw 1vw;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#d2 #m1{
+    font-size: 14px;
+    display: flex;
+    justify-content:center;
+     
+}
+
+#d2 #m1 .h1{
+    padding-right: 6px;
+}
+
+#d2 #m1 .h{
+    font-weight: 100;
+}
+
+#slides .slide h3{
+    text-align: center;
+}
+#slider{
+        position: relative;
+        width: 100%;
+        max-width: 1300px; /* Adjust the width as needed */
+        margin: auto;
+        overflow: hidden;
+        margin-left: -20px;
+}
+
+#slides{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    width: 1400px;
+    transform: translate3d(0px, 0px, 0px); 
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.slide{
+    width: 300px;
+    height: 290px;
+    background-color: #f7f7f7;
+    margin: 1vw 1vw;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    box-sizing: border-box;
+}
+
+.slide .img{
+    width: 290px;
+    height: 200px;
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 5px;
+    border-top-left-radius: 10%;
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+.slide .img img:hover {
+    transform: scale(1.3);
+}
+
+.slide .tag{
+    margin: 20px 0;
+    padding: 10px 22px;
+    width: fit-content;
+    background-color: #f7f7f7;
+    border-radius: 100px;
+}
+
+#sildes .slide h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+    align-content: center;
+    text-align: center;
+}
+
+#dev2{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev2 h1{
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+    width: 50%;
+}
+
+#d2bu{
+    margin-left: 45vw;
+    margin-right: 40vw;
+    margin-top: -100px;
+}
+  
+#d2bu  .prev, .next {
+    background-color: #ff5757;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ #d2bu .prev:hover, .next:hover {
+    background-color: #ff8a8a;
+  }
+
+#d3{
+    background-color: #e4f4fb;
+    width: 100%;
+    height: 90vh;
+    padding: 50px 0 50px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+}
+
+#d3 h2{
+    color: rgb(244, 79, 79);
+    text-align: center;
+    font-size: 2.1em;
+}
+
+#d3 #m1{
+    font-size: 17px;
+    display: flex;
+    margin-left: 23vw;
+}
+
+#d3 #m1 .h{
+    padding-right: 6px;
+    color: red;
+    margin-left: .6vw;
+}
+
+#d3 #m1 .h1{
+    color: red;
+    font-weight: 400;
+}
+
+#d3 .letter{
+    display: flex;
+    margin-left: 20vw;
+    margin-top: 2vw;
+}
+
+#d3 .letter .i1{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#d3 .letters{
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 2vw;
+}
+
+#d3 .letters .i1{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#d3 .letters .i1:hover {
+    transform: translateY(-20px);
+}
+
+#d3 .letter .i1:hover {
+    transform: translateY(-20px);
+}
+
+#d3 img{
+    width: 100%;
+}
+
+#d3 #yogi{
+    height: 200px;
+    width: 170px;
+    background-color: white;
+    margin-left: 32vh;
+    text-align: center;
+    border: .5px solid gray;
+}
+
+#d3 #yogi img{
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    border: 2px solid yellow;
+    margin-top: 1.5vw;
+    margin-left: .35vw;
+}
+
+#d3 #yogi h4{
+    margin-top: .1px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#d3 #yogi h5{
+    font-weight: 100;
+    font-size: 13px;
+}
+
+#d3 #yo{
+    height: 200px;
+    width: 170px;
+    background-color: white;
+    margin-left: 8.2vh;
+    text-align: center;
+    border: .5px solid gray;
+    margin-top: -30px;
+}
+
+#d3 #yo img{
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    border: 2px solid yellow;
+    margin-top: 1.5vw;
+    margin-left: .35vw;
+}
+
+#d3 #yo h4{
+    margin-top: .1px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#d3 #yo h5{
+    font-weight: 100;
+    font-size: 13px;
+}
+
+#d4{
+    width: 100%;
+    height: 110vh;
+    background-color: white;
+}
+
+#d4 #left{
+    width: 50%;
+    height: inherit;
+    padding: 10vw;
+}
+
+#d4 #right{
+    width: 50%;
+    height: inherit;
+    background-color: white;
+    margin-left: 50%;
+    margin-top: -53.79%;
+}
+
+#d4 #left h4{
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 14px;
+}
+
+#d4 #m1{
+    font-size: 12px;
+    display: flex;
+    justify-content:center;
+    margin-left: -214px;
+    margin-top: 9px;
+}
+
+#d4 #m1 .h1{
+    padding-right: 6px;
+}
+
+#d4 #m1 .h{
+    font-weight: 100;
+}
+
+#d4 #right #cir{
+    margin-top: 180px;
+    margin-left: 350px;
+    margin-right: 250px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+#d4 #right #cir a{
+    text-decoration: none;
+    color: grey;
+    opacity: .9;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#d4 #right #cir a.active{
+    color: red;
+    
+}
+
+#d5{
+    width: 100%;
+    height: 750px;
+    background-image: url(https://uptourism.gov.in/downloadmedia/siteContent/2024/202406281500559367Kumbh2024_banner.jpg);
+    margin-top: -50px;
+}
+
+#d5 #sep3 img{
+    margin-top: 6px;
+    width: 100%;
+}
+
+#d5 button img{
+    width: 35px;
+    margin: 6px;
+}
+
+#d5 button{
+    display: inline-block;
+    margin: 0px 5px;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    padding: 5px 15px;
+    color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#bu{
+    margin-left: 200px;
+    padding-top: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sep img{
+    width: 100%;
+
+}
+
+#sep2 img{
+    width: 100%;
+}
+
+#d5 .b1 button{
+    background-color: rgb(248, 118, 4);
+    height: 44px;
+}
+
+#d5 .b2 button{
+    background-color: rgb(103, 103, 240);
+    height: 45px;
+    display: inline-block; 
+     margin: 0px 5px;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    padding: 8px 15px;
+    color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3); 
+
+} 
+
+#d5 .b2 h4{
+    text-align: center;
+    
+}
+
+#d6{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(234, 244, 244);
+    margin-top: -45px;
+}
+
+#d6 #h4 h4{
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+#d6 #m1{
+    font-size: 14px;
+    display: flex;
+    justify-content:center;
+    font-size: 20px; 
+}
+
+#d6 #m1 .h1{
+    padding-right: 6px;
+}
+
+#d6 #m1 .h{
+    font-weight: 100;
+}
+
+#d6 #img{
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+#d6 #img img{
+    box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    width: 40%;
+    height: 450px;
+    position: relative;
+}
+
+#img .te li{
+    display: flex;
+    list-style: none;
+    margin: 0px auto;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    bottom: 0;
+    right: 0;
+    left: 0px;
+}
+
+#d6 #sep3 img{
+    width: 100%;
+    padding-top: 15vh;
+    position: relative;
+    z-index: 99;
+}
+
+#d7{
+    width: 100%;
+    height: 100vh;
+}
+
+#d7 #left{
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999;
+}
+
+#d7 .bac{
+    border-radius: 30px;
+    margin-right: 150px;
+    width: 450px;
+    margin-left: 150px;
+    margin-top: 100px;
+    position: relative;
+    padding: 30px;
+    min-height: 550px;
+    background-image: url(https://uptourism.gov.in/images/tripupbg.jpg);
+    background-repeat: repeat-x;
+    background-position: 0px -81px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.99);
+    animation: animatedBackground 15s linear infinite alternate; 
+    transition-duration: 3s;
+}
+
+#d7 video{
+    width: 100%;
+    height: 105vh;
+    margin-top: -80px;
+}
+
+#d7 #left img{
+    position: relative;
+    margin-top: -200px;
+    margin-left: 150px;
+    transition: transform 5s ease;
+}
+
+#d7 .bac h5{
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#d7 .bac p{
+    color: #000;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+#d7 .bac h2{
+    color: rgba(249, 77, 24, 0.918);
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+#d7 #left img:hover {
+    transform: translateX(60px);
+}
+
+#d7 #right{
+    background-color: transparent;
+    width: 50%;
+    height: 80vh;
+    margin-left: 44%;
+    margin-top: -175vh;
+    z-index: 9999;
+    position: relative;
+    text-align: center;
+}
+
+#d7 #right h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+#d7 #right .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  #d7 #right .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  #d7 #right .grid-item img {
+    width: 60px;
+    height: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  #d7 #right .grid-item p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #d7 #right .grid-item:hover {
+    background-color: rgb(253, 80, 80);
+  }
+
+  #d7 img{
+    z-index: 999;
+    position: relative;
+  }
+  
+
+  #d7 .a{
+    width: 100%;
+  }
+
+  #d8{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+  }
+
+ #d8 .container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+ #d8 h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  /* Slider container */
+ #d8 .slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+ #d8 .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+ #d8 .slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    position: relative;
+  }
+  
+  /* Slide image */
+ #d8 .slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+  
+ #d8 .slide .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation buttons */
+ #d8 .navigation {
+    position: absolute;
+    top: 50%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+ #d8 .navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+#d8 .navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+

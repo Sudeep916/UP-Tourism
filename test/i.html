@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map of UP</title>
+  <link rel="stylesheet" href="j.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Map of Uttar Pradesh</h1>
+    
+    <!-- City name display box -->
+    <div id="city-name-box">Hover over a city</div>
+
+    <!-- SVG Map -->
+    <div class="map-container">
+      <svg
+        id="up-map"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 400 400"
+        width="400"
+        height="400">
+        
+        <!-- Example: Paths representing cities -->
+        <path
+          class="city"
+          id="lucknow"
+          d="M 100,100 L 150,100 L 150,150 L 100,150 Z" 
+          data-name="Lucknow"
+        />
+        <path
+          class="city"
+          id="kanpur"
+          d="M 150,100 L 200,100 L 200,150 L 150,150 Z"
+          data-name="Kanpur"
+        />
+        <path
+          class="city"
+          id="varanasi"
+          d="M 100,150 L 150,150 L 150,200 L 100,200 Z"
+          data-name="Varanasi"
+        />
+        <!-- You can add more cities here by defining paths -->
+      </svg>
+    </div>
+  </div>
+
+  <script src="j.js"></script>
+</body>
+</html>

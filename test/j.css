@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+}
+
+.map-container {
+  position: relative;
+}
+
+#up-map {
+  width: 500px;
+  height: auto;
+  fill: #1a3d7f;
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+
+.district {
+  fill: #1a3d7f;
+  transition: fill 0.3s ease;
+}
+
+.district:hover {
+  fill: #ff7f41;
+}
+
+
+/* styles.css */
+.tooltip {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  white-space: nowrap;
+  transform: translate(-50%, -50%); /* Center the tooltip directly on cursor */
+}
